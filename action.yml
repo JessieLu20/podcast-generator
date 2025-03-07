@@ -15,4 +15,4 @@ inputs:
   name:
     description: "The commiter's name"
     requred: true
-    default" ${{github.actor}}
+    defaults: ${{github.actor}}
