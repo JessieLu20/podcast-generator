@@ -1,0 +1,18 @@
+name: "Podcast Generator"
+author: "Han Lu"
+description: "Generates a feed for a podcast from a YAML file"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "git-branch"
+  color: "red"
+inputs:
+  email:
+    description: "The commiter's email address"
+    required: true
+    defaults: ${{github.actor}}@localhost
+  name:
+    description: "The commiter's name"
+    requred: true
+    default" ${{github.actor}}
