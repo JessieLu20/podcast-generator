@@ -47,3 +47,9 @@ jobs:
       - name: Run Feed Generator
         uses: JessieLu20/podcast-generator@main
 ```
+
+Questions:
+You are tasked with setting up a new GitHub Actions workflow in your repository. Part of this action requires pulling data from another repository, processing it using a Docker image you previously built, and then pushing the results back. How would you describe the correct steps to accomplish this using the provided script?
+
+Answer:
+Define an action YAML file that specifies using Docker as the runner, set up the Docker file for processing, and ensure the entry point script handles the workflow execution.
